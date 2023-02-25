@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
 import {
   onSnapshot,
   collection,
@@ -29,6 +28,17 @@ function App() {
     })
   }
 
+  const createProduct = (() => {
+    let obj = {
+      name: 'player',
+      sku: '0987',
+      price: '456',
+      description: 'una playera'
+    }
+    addDoc(collection(db, 'productos'), obj)
+    getData
+  })
+
   useEffect(() => {
     getData()
   }, [])
@@ -40,6 +50,9 @@ function App() {
       {
         products.map(item => <h3>{item.name}</h3>)
       }
+      <button type="button" onClick={() => createProduct()} >
+        Click!
+      </button>
     </div>
   )
 }

@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyA5Wmpc4r-nmuqaFTizU3ah8XnD14gOdOQ",
+  authDomain: "crud-example-react.firebaseapp.com",
+  projectId: "crud-example-react",
+  storageBucket: "crud-example-react.appspot.com",
+  messagingSenderId: "904910679726",
+  appId: "1:904910679726:web:22d7f66a64417b8fdec73f"
 };
 
 // Initialize Firebase
