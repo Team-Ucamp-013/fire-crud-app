@@ -1,6 +1,8 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
+console.log(import.meta.env.FIRE_CRUD_APP_KEY_FIREBASE)
+
 const firebaseConfig = {
   apiKey: "AIzaSyA5Wmpc4r-nmuqaFTizU3ah8XnD14gOdOQ",
   authDomain: "crud-example-react.firebaseapp.com",
